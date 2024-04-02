@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+ng new angular-mono-workspace --createApplication="false"
+
+ng g application standalone --routing --style=scss
+
+ng g application mfe-app --routing --style=scss
+
+npm i webpack webpack-cli --save-dev
+
+ng add @angular-architects/module-federation@12 standalone --port=4200
+
+ng add @angular-architects/module-federation@12 mfe-app --port=4300
